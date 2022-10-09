@@ -10,16 +10,48 @@ This is a map with current key features provided by feign:
 
 ![MindMap overview](https://github.com/raulrobinson/feign-test-cloud/blob/master/img/feign_test.jpg)
 
-shopping-service - client/CustomerClient
+shopping-service - controller/InvoiceRest.java
 
 ```java
-@FeignClient(name = "customer", url = CUSTOMER_URL, fallback = CustomerHystrixFallbackFactory.class)
-public interface CustomerClient {
-    @GetMapping(value = "/{id}")
-    public ResponseEntity<Customer> getCustomer(@PathVariable("id") long id);
-}
+    @GetMapping("/customers/{id}")
+    public String getCustomer(@PathVariable("id") Long id) {
+        return invoiceService.getCustomer(id);
+    }
 ```
 
+shopping-service - client/CustomerClient.java
+
+```java
+    @FeignClient(name = "customer", url = CUSTOMER_URL, fallback = CustomerHystrixFallbackFactory.class)
+    public interface CustomerClient {
+        @GetMapping(value = "/{id}")
+        public ResponseEntity<Customer> getCustomer(@PathVariable("id") long id);
+    }
+```
+
+service-customer - controller/CustomerController.java
+
+```java
+    /**
+     * GET CUSTOMER BY ID.
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public ResponseEntity<Customer> getCustomer(
+            @PathVariable("id") long id
+    ){
+        log.info("Fetching Customer with ID {}", id);
+        Customer customer = customerService.getCustomer(id);
+        if (null == customer){
+            log.error("Customer with ID {} not found", id);
+            return ResponseEntity.notFound().build();
+        }
+    
+        return ResponseEntity.ok(customer);
+    }
+
+```
 
 ### Collection Postman.
 
