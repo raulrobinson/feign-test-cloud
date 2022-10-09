@@ -50,7 +50,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Raul Bolivar Navas\",\r\n    \"state\": \"ACTIVE\"\r\n}",
+					"raw": "{\r\n    \"name\": \"usuario Uno\",\r\n    \"state\": \"ACTIVE\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -77,7 +77,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Robin Navas\",\r\n    \"state\": \"INACTIVE\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Usuario Dos\",\r\n    \"state\": \"INACTIVE\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
