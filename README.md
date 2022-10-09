@@ -10,6 +10,16 @@ This is a map with current key features provided by feign:
 
 ![MindMap overview](https://github.com/raulrobinson/feign-test-cloud/blob/master/img/feign_test.jpg)
 
+shopping-service - client/CustomerClient
+
+```java
+@FeignClient(name = "customer", url = CUSTOMER_URL, fallback = CustomerHystrixFallbackFactory.class)
+public interface CustomerClient {
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Customer> getCustomer(@PathVariable("id") long id);
+}
+```
+
 
 ### Collection Postman.
 
