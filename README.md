@@ -4,6 +4,13 @@
 [![CircleCI](https://circleci.com/gh/OpenFeign/feign/tree/master.svg?style=svg)](https://circleci.com/gh/OpenFeign/feign/tree/master)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.openfeign/feign-core/badge.png)](https://search.maven.org/artifact/io.github.openfeign/feign-core/)
 
+## Feature overview
+
+This is a map with current key features provided by feign:
+
+![MindMap overview](https://github.com/raulrobinson/feign-test-cloud/blob/master/img/feign_test.jpg)
+
+
 ### Collection Postman.
 
 ```json
