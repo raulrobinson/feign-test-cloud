@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f4b8ab94-5675-480c-add1-5e1762efc0bb" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FrF24CwSZFWPzHMFbTYy1ZCccu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RESTKit.sync": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Users/OPT/Desktop/MS Gobierno/feign-test-cloud/service-country/src/main/java/com/rasysbox/country",
+    "last_opened_file_path": "D:/Telefonica - Movistar/HGP",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\OPT\Desktop\MS Gobierno\feign-test-cloud\service-country\src\main\java\com\rasysbox\country\service" />
+      <recent name="C:\Users\OPT\Desktop\MS Gobierno\feign-test-cloud\service-country\src\main\java\com\rasysbox\country\repository" />
+      <recent name="C:\Users\OPT\Desktop\MS Gobierno\feign-test-cloud\service-country\src\main\java\com\rasysbox\country\entity" />
+      <recent name="C:\Users\OPT\Desktop\MS Gobierno\feign-test-cloud\service-customer\src\main\java\com\rasysbox\customer\exception" />
+      <recent name="C:\Users\OPT\Desktop\MS Gobierno\feign-test-cloud\service-customer\src\main\java\com\rasysbox\customer\service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.rasysbox.customer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ServiceCountryApplication">
+    <configuration name="ServiceCountryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rasysbox.country.ServiceCountryApplication" />
+      <module name="service-country" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rasysbox.country.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceCustomerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rasysbox.customer.ServiceCustomerApplication" />
+      <module name="service-customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rasysbox.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceShoppingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rasysbox.shopping.ServiceShoppingApplication" />
+      <module name="service-shopping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rasysbox.shopping.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.digitallab.store.shopping.ShoppingServiceApplication" />
+      <module name="shopping-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.digitallab.store.shopping.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.rasysbox.shopping.ShoppingServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rasysbox.shopping.ShoppingServiceApplication" />
+      <module name="shopping-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rasysbox.shopping.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ServiceCountryApplication" />
+        <item itemvalue="Application.ServiceCustomerApplication" />
+        <item itemvalue="Application.com.rasysbox.shopping.ShoppingServiceApplication" />
+        <item itemvalue="Application.ShoppingServiceApplication" />
+        <item itemvalue="Application.ServiceShoppingApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4b8ab94-5675-480c-add1-5e1762efc0bb" name="Changes" comment="" />
+      <created>1665242086397</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665242086397</updated>
+    </task>
+    <servers />
+  </component>
+</project>
