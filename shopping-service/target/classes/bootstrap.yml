@@ -1,17 +1,6 @@
-#spring:
-#  application:
-#    name: shopping-service
-#  cloud:
-#    config:
-#      uri: http://localhost:8081
-#      username: root
-#      password: s3cr3t
-#  boot:
-#    admin:
-#      client:
-#        url: http://localhost:8086
-
-#Application Configuration
+# ===============================
+# APP CONFIGURATION
+# ===============================
 server:
   port: 8053
   error:
@@ -27,12 +16,13 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
+
+  # ===============================
+  # DATABASE CONFIGURATION
+  # ===============================
   h2:
     console:
       enabled: true
-  # ===============================
-  # DB
-  # ===============================
   datasource:
     url: jdbc:h2:mem:invoiceDB;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     driverClassName: org.h2.Driver
@@ -84,13 +74,32 @@ swagger:
     developer-name: Raul Bolivar
     developer-mail: raul.bolivar.ext@telefonica.com
 
+# ===============================
+# CONTROLLER BASE-PATH
+# ===============================
 controller:
   properties:
     base-path: rasysbox/v1/service-shopping
 
+# ===============================
+# FEIGN CLIENT EXTERN-PATH
+# ===============================
 feign:
   client:
     customer:
       url: localhost:8051/rasysbox/v1/service-customer/customers
     country:
       url: localhost:8052/rasysbox/v1/service-country/countries
+
+#spring:
+#  application:
+#    name: shopping-service
+#  cloud:
+#    config:
+#      uri: http://localhost:8081
+#      username: root
+#      password: s3cr3t
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8086

@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4e9548a5-c353-4b88-83cb-fb37abf617bf",
+		"_postman_id": "1dbcc930-719c-4833-bfed-17fdb1c45efc",
 		"name": "FEIGN-CLOUD",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,12 +11,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8051/customers/all",
+					"raw": "localhost:8051/rasysbox/v1/service-customer/customers/all",
 					"host": [
 						"localhost"
 					],
 					"port": "8051",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-customer",
 						"customers",
 						"all"
 					]
@@ -30,12 +33,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8051/customers/2",
+					"raw": "localhost:8051/rasysbox/v1/service-customer/customers/2",
 					"host": [
 						"localhost"
 					],
 					"port": "8051",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-customer",
 						"customers",
 						"2"
 					]
@@ -50,7 +56,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"usuario Uno\",\r\n    \"state\": \"ACTIVE\"\r\n}",
+					"raw": "{\r\n    \"name\": \"usuario tres\",\r\n    \"state\": \"ACTIVE\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -58,12 +64,15 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8051/customers",
+					"raw": "localhost:8051/rasysbox/v1/service-customer/customers",
 					"host": [
 						"localhost"
 					],
 					"port": "8051",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-customer",
 						"customers"
 					]
 				}
@@ -85,12 +94,15 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8051/customers/1",
+					"raw": "localhost:8051/rasysbox/v1/service-customer/customers/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8051",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-customer",
 						"customers",
 						"1"
 					]
@@ -104,12 +116,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8051/customers/1",
+					"raw": "localhost:8051/rasysbox/v1/service-customer/customers/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8051",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-customer",
 						"customers",
 						"1"
 					]
@@ -123,12 +138,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8052/countries/all",
+					"raw": "localhost:8052/rasysbox/v1/service-country/countries/all",
 					"host": [
 						"localhost"
 					],
 					"port": "8052",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-country",
 						"countries",
 						"all"
 					]
@@ -142,12 +160,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8052/countries/1",
+					"raw": "localhost:8052/rasysbox/v1/service-country/countries/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8052",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-country",
 						"countries",
 						"1"
 					]
@@ -162,7 +183,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"country\": \"COLOMBIA\",\r\n    \"state\": \"ACTIVE\"\r\n}",
+					"raw": "{\r\n    \"country\": \"PERU\",\r\n    \"state\": \"ACTIVE\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -170,12 +191,15 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8052/countries",
+					"raw": "localhost:8052/rasysbox/v1/service-country/countries",
 					"host": [
 						"localhost"
 					],
 					"port": "8052",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-country",
 						"countries"
 					]
 				}
@@ -197,12 +221,15 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8052/countries/1",
+					"raw": "localhost:8052/rasysbox/v1/service-country/countries/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8052",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-country",
 						"countries",
 						"1"
 					]
@@ -216,12 +243,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8052/countries/2",
+					"raw": "localhost:8052/rasysbox/v1/service-country/countries/2",
 					"host": [
 						"localhost"
 					],
 					"port": "8052",
 					"path": [
+						"rasysbox",
+						"v1",
+						"service-country",
 						"countries",
 						"2"
 					]
@@ -235,14 +265,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8053/telefonica/v1/service-shopping/invoices/customers/1",
-					"protocol": "http",
+					"raw": "localhost:8053/rasysbox/v1/service-shopping/invoices/customers/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8053",
 					"path": [
-						"telefonica",
+						"rasysbox",
 						"v1",
 						"service-shopping",
 						"invoices",
@@ -259,14 +288,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8053/telefonica/v1/service-shopping/invoices/countries/1",
-					"protocol": "http",
+					"raw": "localhost:8053/rasysbox/v1/service-shopping/invoices/countries/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8053",
 					"path": [
-						"telefonica",
+						"rasysbox",
 						"v1",
 						"service-shopping",
 						"invoices",
@@ -283,19 +311,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8053/telefonica/v1/service-shopping/invoices/subscribers/1",
-					"protocol": "http",
+					"raw": "localhost:8053/rasysbox/v1/service-shopping/invoices/subscribers/2",
 					"host": [
 						"localhost"
 					],
 					"port": "8053",
 					"path": [
-						"telefonica",
+						"rasysbox",
 						"v1",
 						"service-shopping",
 						"invoices",
 						"subscribers",
-						"1"
+						"2"
 					]
 				}
 			},
