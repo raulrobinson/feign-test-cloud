@@ -17,7 +17,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/countries")
+@RequestMapping("${controller.properties.base-path}" + "/countries")
 public class CountryController {
 
     @Autowired

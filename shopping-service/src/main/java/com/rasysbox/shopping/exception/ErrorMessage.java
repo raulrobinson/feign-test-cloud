@@ -1,4 +1,4 @@
-package com.rasysbox.shopping.controller;
+package com.rasysbox.shopping.exception;
 
 
 import lombok.Builder;

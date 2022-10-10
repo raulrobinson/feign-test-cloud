@@ -4,9 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b8ab94-5675-480c-add1-5e1762efc0bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="f4b8ab94-5675-480c-add1-5e1762efc0bb" name="Changes" comment="pom">
+      <change afterPath="$PROJECT_DIR$/service-country/src/main/java/com/rasysbox/country/config/SpringFoxConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-country/src/main/java/com/rasysbox/country/config/SwaggerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-customer/src/main/java/com/rasysbox/customer/config/SpringFoxConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-customer/src/main/java/com/rasysbox/customer/config/SwaggerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/exception/BadRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-country/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-country/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-country/src/main/java/com/rasysbox/country/controller/CountryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-country/src/main/java/com/rasysbox/country/controller/CountryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-country/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-country/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-customer/src/main/java/com/rasysbox/customer/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-customer/src/main/java/com/rasysbox/customer/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-customer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-customer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/client/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/client/ProductClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/controller/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/exception/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/controller/InvoiceRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/controller/InvoiceRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/service/InvoiceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/src/main/java/com/rasysbox/shopping/service/InvoiceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/target/classes/com/rasysbox/shopping/client/ProductClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/target/classes/com/rasysbox/shopping/client/ProductClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/target/classes/com/rasysbox/shopping/controller/ErrorMessage$ErrorMessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/target/classes/com/rasysbox/shopping/controller/ErrorMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/target/classes/com/rasysbox/shopping/controller/InvoiceRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/target/classes/com/rasysbox/shopping/controller/InvoiceRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-service/target/classes/com/rasysbox/shopping/service/InvoiceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-service/target/classes/com/rasysbox/shopping/service/InvoiceServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +73,16 @@
     </option>
   </component>
   <component name="ProjectId" id="2FrF24CwSZFWPzHMFbTYy1ZCccu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RESTKit.sync": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -158,6 +184,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665242086397</updated>
     </task>
+    <task id="LOCAL-00001" summary="pom">
+      <created>1665364491065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665364491065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,5 +204,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom" />
   </component>
 </project>

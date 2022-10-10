@@ -1,5 +1,7 @@
 package com.rasysbox.shopping.controller;
 
+import com.rasysbox.shopping.exception.BadRequest;
+import com.rasysbox.shopping.exception.ErrorMessage;
 import com.rasysbox.shopping.service.InvoiceService;
 import com.rasysbox.shopping.entity.Invoice;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -26,28 +28,43 @@ public class InvoiceRest {
     @Autowired
     InvoiceService invoiceService;
 
-    // ------------------- RETRIEVE CUSTOMER BY ID ------------------- //
+    @Autowired
+    BadRequest badRequest;
 
+    /**
+     * RETRIEVE CUSTOMER BY ID
+     * @param id
+     * @return
+     */
     @GetMapping("/customers/{id}")
     public String getCustomer(@PathVariable("id") Long id) {
         return invoiceService.getCustomer(id);
     }
 
-    // ------------------- RETRIEVE COUNTRY BY ID ------------------- //
-
+    /**
+     * RETRIEVE COUNTRY BY ID
+     * @param id
+     * @return
+     */
     @GetMapping("/countries/{id}")
     public String getCountry(@PathVariable("id") Long id) {
         return invoiceService.getCountry(id);
     }
 
-    // ------------------- RETRIEVE SUBSCRIBER BY ID ------------------- //
+    /**
+     * RETRIEVE SUBSCRIBER BY ID
+     * @param id
+     * @return
+     */
     @GetMapping("/subscribers/{id}")
     public String getSubscriber(@PathVariable("id") Long id) {
         return invoiceService.getSubscriber(id);
     }
 
-    // ------------------- RETRIEVE ALL INVOICES ------------------- //
-
+    /**
+     * RETRIEVE ALL INVOICES
+     * @return
+     */
     @GetMapping
     public ResponseEntity<List<Invoice>> listAllInvoices() {
         List<Invoice> invoices = invoiceService.findInvoiceAll();
@@ -57,8 +74,11 @@ public class InvoiceRest {
         return  ResponseEntity.ok(invoices);
     }
 
-    // ------------------- RETRIEVE SINGLE INVOICE ------------------- //
-
+    /**
+     * RETRIEVE SINGLE INVOICE
+     * @param id
+     * @return
+     */
     @GetMapping(value = "/{id}")
     public ResponseEntity<Invoice> getInvoice(@PathVariable("id") long id) {
         log.info("Fetching Invoice with id {}", id);
@@ -70,21 +90,29 @@ public class InvoiceRest {
         return  ResponseEntity.ok(invoice);
     }
 
-    // ------------------- CREATE INVOICE BY ID ------------------- //
-
+    /**
+     * CREATE INVOICE BY ID
+     * @param invoice
+     * @param result
+     * @return
+     */
     @PostMapping
     public ResponseEntity<Invoice> createInvoice(@Valid @RequestBody Invoice invoice, BindingResult result) {
         log.info("Creating Invoice : {}", invoice);
         if (result.hasErrors()){
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, this.formatMessage(result));
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, badRequest.formatMessage(result));
         }
         Invoice invoiceDB = invoiceService.createInvoice (invoice);
 
         return  ResponseEntity.status( HttpStatus.CREATED).body(invoiceDB);
     }
 
-    // ------------------- UPDATE INVOICE BY ID ------------------- //
-
+    /**
+     * UPDATE INVOICE BY ID
+     * @param id
+     * @param invoice
+     * @return
+     */
     @PutMapping(value = "/{id}")
     public ResponseEntity<?> updateInvoice(@PathVariable("id") long id, @RequestBody Invoice invoice) {
         log.info("Updating Invoice with id {}", id);
@@ -98,8 +126,11 @@ public class InvoiceRest {
         return  ResponseEntity.ok(currentInvoice);
     }
 
-    // ------------------- DELETE INVOICE BY ID ------------------- //
-
+    /**
+     * DELETE INVOICE BY ID
+     * @param id
+     * @return
+     */
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Invoice> deleteInvoice(@PathVariable("id") long id) {
         log.info("Fetching & Deleting Invoice with id {}", id);
@@ -113,28 +144,4 @@ public class InvoiceRest {
         return ResponseEntity.ok(invoice);
     }
 
-    private String formatMessage( BindingResult result){
-        List<Map<String,String>> errors = result.getFieldErrors().stream()
-                .map(err ->{
-                    Map<String,String> error =  new HashMap<>();
-                    error.put(err.getField(), err.getDefaultMessage());
-                    return error;
-
-                }).collect(Collectors.toList());
-
-        ErrorMessage errorMessage = ErrorMessage.builder()
-                .code("01")
-                .messages(errors).build();
-        ObjectMapper mapper = new ObjectMapper();
-
-        String jsonString="";
-
-        try {
-            jsonString = mapper.writeValueAsString(errorMessage);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
-
-        return jsonString;
-    }
 }

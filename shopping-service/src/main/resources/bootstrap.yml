@@ -86,11 +86,11 @@ swagger:
 
 controller:
   properties:
-    base-path: telefonica/v1/service-shopping
+    base-path: rasysbox/v1/service-shopping
 
 feign:
   client:
     customer:
-      url: localhost:8051/customers
+      url: localhost:8051/rasysbox/v1/service-customer/customers
     country:
-      url: localhost:8052/countries
+      url: localhost:8052/rasysbox/v1/service-country/countries

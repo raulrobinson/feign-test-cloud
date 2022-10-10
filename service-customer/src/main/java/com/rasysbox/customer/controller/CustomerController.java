@@ -17,7 +17,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("${controller.properties.base-path}" + "/customers")
 public class CustomerController {
 
     @Autowired
