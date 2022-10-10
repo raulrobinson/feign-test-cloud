@@ -12,11 +12,9 @@
         <module name="shopping-service" />
         <module name="service-customer" />
         <module name="service-registry" />
+        <module name="service-shopping" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="service-shopping" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
